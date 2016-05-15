@@ -1,0 +1,50 @@
+//
+   Created by apple on 16-5-10.
+
+extends layout
+
+block content
+   //h1= title
+   .container
+      .col-md-12
+         //h1.margin-bottom-15 Login Page
+         form(role='form', action='#', method='post').form-horizontal.templatemo-container.templatemo-login-form-1.margin-bottom-30
+            .form-group
+               .col-md-12
+                  .control-container
+                     label(for='username').control-label.fa-label
+                        i.fa.fa-label.fa-medium
+                     input(type='text',placeholder='Usename')#username.form-control
+            .form-group
+               .col-md-12
+                  .control-wrapper
+                     label(for='password').control-label.fa-label
+                        i.fa.fa-lock.fa-medium
+                      input(type='password',placeholder='Password')#password.form-control
+            .form-group
+               .col-md-12
+                  .control-wrapper
+                     input(type='submit',value='Log in').btn.btn-info
+                     a(href='forgot-password.html').text-right.pull-right Forgot password?
+            .form-group
+               .col-md-12
+                  label Login with:
+                  .inline-block
+                     a(href='#')
+                        i.fa.fa-facebook-square.login-with
+                     a(href='#')
+                        i.fa.fa-twitter-square.login-with
+                     a(href='#')
+                        i.fa.fa-google-plus-square.login-with
+                     a(href='#')
+                        i.fa.fa-tumblr-square.login-with
+                     a(href='#')
+                        i.fa.fa-github-square.login-with
+            .text-center
+               a(href='create.account.html').templatemo-create-new Create new account
+                  i.fa.fa-arrow-circle-o-right
+         
+
+
+
+
